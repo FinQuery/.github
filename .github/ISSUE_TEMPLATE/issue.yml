@@ -1,0 +1,58 @@
+name: "기본 이슈 (Standard Issue)"
+description: "기능 개발, 데이터·모델링 과업, 인프라 구축 및 오류 수정 사항을 등록합니다."
+title: "[<Tag>] "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: "🎯 목표 (Goal)"
+      description: "작업의 핵심 목표 1문장 요약 및 파이프라인·시스템 관점의 배경/기대 효과를 기술합니다."
+      value: |
+        **"<핵심 목표 1문장 요약>"**
+
+        - <전체 파이프라인·시스템에서의 역할, 방어 로직 또는 기대 효과>
+    validations:
+      required: true
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: "📅 예상 일정 (Timeline)"
+      description: "예상 작업 기간과 총 소요 시간을 기입합니다."
+      value: |
+        - **기간:** YYYY.MM.DD ~ YYYY.MM.DD
+        - **예상 소요 시간:** Xh
+    validations:
+      required: true
+
+  - type: input
+    id: branch
+    attributes:
+      label: "🌿 브랜치 (Branch)"
+      description: "이슈 등록 후 부여된 이슈 번호에 맞춰 수정합니다."
+      value: "`feature/#<이슈번호>-<기능명>-<담당자이니셜>`"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "📋 세부 태스크 (Tasks)"
+      description: "수행할 세부 작업 단위를 체크리스트로 작성합니다."
+      value: |
+        - [ ] <세부 작업 내용 1>
+        - [ ] <세부 작업 내용 2>
+        - [ ] <세부 작업 내용 3>
+    validations:
+      required: true
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: "✅ 완료 조건 (Definition of Done)"
+      description: "이슈 종료(Close) 여부를 객관적으로 판별할 수 있는 검증 기준을 명시합니다."
+      value: |
+        1. **<조건 카테고리 1>:** <검증 가능한 완료 기준>
+        2. **<조건 카테고리 2>:** <검증 가능한 완료 기준>
+    validations:
+      required: true
