@@ -1,0 +1,62 @@
+title: "[Decision] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        아키텍처, 데이터 파이프라인, 모델링 및 기술 스택 선정에 대한 의사결정 배경과 트레이드오프 근거(ADR)를 기록합니다.
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "1. 상태 (Status)"
+      description: "현재 의사결정의 상태를 선택합니다."
+      options:
+        - "Accepted (채택)"
+        - "Proposed (제안/논의 중)"
+        - "Superseded (변경/대체됨)"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: "2. 연관 작업 (References)"
+      description: "본 의사결정이 발생한 스프린트 디스커션 링크 및 관련 PR을 기입합니다."
+      placeholder: "[Sprint X](URL) | org/repo#PR_번호"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "3. 배경 및 문제 정의 (Context)"
+      description: "의사결정이 필요한 기술적·구조적 배경과 현재 주어진 제약 조건(리소스, 일정, 데이터 특성 등)을 작성합니다."
+      placeholder: "해결해야 할 문제 상황과 제약 조건을 기술하세요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: "4. 검토 대안 (Options Considered)"
+      description: "비교 검토한 후보 대안들의 장단점과 리스크를 정리합니다."
+      value: |
+        | 대안 | 장점 (Pros) | 단점 및 한계 (Cons) |
+        | :--- | :--- | :--- |
+        | **Option A: <대안명>** | <장점 요약> | <단점 및 리스크 요약> |
+        | **Option B: <대안명>** | <장점 요약> | <단점 및 리스크 요약> |
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision-rationale
+    attributes:
+      label: "5. 최종 결정 및 사유 (Decision & Rationale)"
+      description: "최종 채택한 대안과 트레이드오프 판단 근거, 적용에 따른 파급 효과를 명시합니다."
+      value: |
+        - **채택안:** <최종 선택 대안>
+        - **결정 근거:** <성능, 복잡도, 일정, 유지보수성 등 핵심 판단 근거>
+        - **파급 효과 및 후속 조치:** <아키텍처/코드 변경 사항 및 감수할 기술적 제약>
+    validations:
+      required: true
