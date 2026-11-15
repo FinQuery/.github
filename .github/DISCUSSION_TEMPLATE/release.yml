@@ -1,0 +1,59 @@
+title: "[Release vX.Y] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        릴리즈 단위의 목표, MVP 범위(In/Out-of-Scope), 정량적 목표 지표 및 스프린트 로드맵을 정의합니다.
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: "1. 개요 (Overview)"
+      description: "릴리즈 진행 기간, 연동된 GitHub Milestone 링크, 최종 목표 상태를 기입합니다."
+      value: |
+        - **기간:** YYYY.MM.DD ~ YYYY.MM.DD (Sprint X ~ Sprint Y)
+        - **마일스톤:** [Release vX.Y](<Milestone_URL>)
+        - **목표:** <릴리즈 완료 시 달성할 시스템 및 모델의 최종 상태>
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: "2. 범위 (Scope)"
+      description: "이번 릴리즈의 필수 구현 범위(In-Scope)와 일정 관리를 위해 의도적으로 제외한 항목(Out-of-Scope)을 명시합니다."
+      value: |
+        ### In-Scope (MVP)
+        - [ ] <필수 구현 기능 / 파이프라인 / 모델 산출물 1>
+        - [ ] <필수 구현 기능 / 파이프라인 / 모델 산출물 2>
+
+        ### Out-of-Scope
+        - <제외 항목> — <제외 사유 및 차기 이관 버전>
+    validations:
+      required: true
+
+  - type: textarea
+    id: target-metrics
+    attributes:
+      label: "3. 목표 지표 (Target Metrics)"
+      description: "검증 환경에서 객관적으로 계측 가능한 데이터/모델 및 시스템 지표를 정의합니다."
+      value: |
+        | 구분 | 평가 지표 (Metric) | 기준치 (Baseline) | 목표치 (Target) | 검증 방법 |
+        | :--- | :--- | :--- | :--- | :--- |
+        | **Data / ML** | <지표명> | <기준 수치> | <목표 수치> | <평가 데이터셋 및 측정 방식> |
+        | **System / Infra** | <지표명> | <기준 수치> | <목표 수치> | <테스트 환경 및 계측 도구> |
+    validations:
+      required: true
+
+  - type: textarea
+    id: roadmap
+    attributes:
+      label: "4. 스프린트 로드맵 및 R&R (Sprint Breakdown)"
+      description: "릴리즈를 구성하는 스프린트 일정과 담당자별 핵심 과업을 매핑합니다."
+      value: |
+        | 스프린트 | 기간 | 핵심 산출물 (Deliverable) | 담당자 및 주요 과업 |
+        | :--- | :--- | :--- | :--- |
+        | **Sprint X** | MM.DD ~ MM.DD | <스프린트 목표 산출물> | - **@GitHub_ID:** <담당 과업><br>- **@GitHub_ID:** <담당 과업> |
+        | **Sprint Y** | MM.DD ~ MM.DD | <스프린트 목표 산출물> | - **@GitHub_ID:** <담당 과업><br>- **@GitHub_ID:** <담당 과업> |
+    validations:
+      required: true
