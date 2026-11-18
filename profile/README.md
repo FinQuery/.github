@@ -12,17 +12,17 @@
 ## 2. Repositories
 | Repository | Role | Tech Stack |
 | :--- | :--- | :--- |
-| [**<데이터 분석 Repo명>**](<Repo_URL>) | 데이터 파이프라인, 전처리, ML/DL 모델링 및 서빙 | <예: Python, PyTorch, Airflow, BentoML> |
-| [**<서버 Repo명>**](<Repo_URL>) | 백엔드 API 서버, 비즈니스 로직 및 데이터 연동 | <예: Java, Spring Boot, PostgreSQL, Redis> |
-| [**<인프라 Repo명>**](<Repo_URL>) | 컨테이너 오케스트레이션, CI/CD 및 모니터링 | <예: Docker, GitHub Actions, AWS, Prometheus> |
+| [**ARIA**](https://github.com/FinQuery/aria) | 데이터 파이프라인, 전처리, ML/DL 모델링 및 서빙 | <예: Python, PyTorch, Airflow, BentoML> |
+| [**Server**](https://github.com/FinQuery/server) | 백엔드 API 서버, 비즈니스 로직 및 데이터 연동 | <예: Java, Spring Boot, PostgreSQL, Redis> |
+| [**Infra**](https://github.com/FinQuery/infra) | 컨테이너 오케스트레이션, CI/CD 및 모니터링 | <예: Docker, GitHub Actions, AWS, Prometheus> |
 
 ---
 
 ## 3. Team
 | Name | Role | GitHub | Responsibility |
 | :--- | :--- | :--- | :--- |
-| **<이름>** | DS / DA | [@GitHub_ID](https://github.com/<GitHub_ID>) | <데이터 엔지니어링, 피처 엔지니어링, 모델 개발 및 검증> |
-| **<이름>** | Backend / Infra | [@GitHub_ID](https://github.com/<GitHub_ID>) | <서버 아키텍처 설계, API 개발, 인프라 구축 및 배포> |
+| **김준수** | DS / DA | [junsu0302](https://github.com/junsu0302) | 데이터.피처 엔지니어링, 예측 모델 개발 및 XAI, sLLM 구축 |
+| **이재석** | BE / Infra | [iamwotjr99](https://github.com/iamwotjr99) | 서버 아키텍처 설계, API 개발, 인프라 구축 및 배포 |
 
 ---
 
