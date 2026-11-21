@@ -28,13 +28,15 @@
 
 ## 4. Release & Sprint Roadmap
 
-### [Release v1.0] <릴리즈 핵심 목표명> ([Plan](<Release_Discussion_URL>))
+### [Release v1.0] ARIA 모듈화 및 LLM 기반 Q&A MVP 구축 ([Link](https://github.com/orgs/FinQuery/discussions/1))
 | Sprint | Period | Owner | Core MVP | Log |
 | :--- | :--- | :--- | :--- | :--- |
-| **Sprint 1** | MM.DD ~ MM.DD | @GitHub_ID | <담당 핵심 MVP 요약> | [Link](<Sprint_Discussion_URL>) |
-| **Sprint 1** | MM.DD ~ MM.DD | @GitHub_ID | <담당 핵심 MVP 요약> | [Link](<Sprint_Discussion_URL>) |
-| **Sprint 2** | MM.DD ~ MM.DD | @GitHub_ID | <담당 핵심 MVP 요약> | - |
-| **Sprint 2** | MM.DD ~ MM.DD | @GitHub_ID | <담당 핵심 MVP 요약> | - |
+| **Sprint 1** | 11.23 ~ 12.06 | @junsu0302 | 모듈화를 통한 시스템 확장성 확보. 데이터 확장 및 커버 40종 모델 구축 | [Link](<Sprint_Discussion_URL>) |
+| **Sprint 1** | 11.23 ~ 12.06 | @iamwotjr99 | 검색 서버 및 Gemini API 연동 서버 구축을 통한 LLM Q&A MVP 구축 | [Link](<Sprint_Discussion_URL>) |
+| **Sprint 2** | 12.07 ~ 12.20 | @junsu0302 | <담당 핵심 MVP 요약> | [Link](<Sprint_Discussion_URL>) |
+| **Sprint 2** | 12.07 ~ 12.20 | @iamwotjr99 | <담당 핵심 MVP 요약> | [Link](<Sprint_Discussion_URL>) |
+| **Sprint 3** | 12.21 ~ 01.03 | @junsu0302 | <담당 핵심 MVP 요약> | [Link](<Sprint_Discussion_URL>) |
+| **Sprint 3** | 12.21 ~ 01.03 | @iamwotjr99 | <담당 핵심 MVP 요약> | [Link](<Sprint_Discussion_URL>) |
 
 ### [Release v2.0] <릴리즈 핵심 목표명> ([Plan](<Release_Discussion_URL>))
 | Sprint | Period | Owner | Core MVP | Log |
